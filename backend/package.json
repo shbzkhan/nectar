@@ -1,0 +1,13 @@
+{
+  "name": "nectar",
+  "version": "1.0.0",
+  "description": "nectar - online groceries delivery app",
+  "license": "ISC",
+  "author": "shahbaz husain khan",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  }
+}
