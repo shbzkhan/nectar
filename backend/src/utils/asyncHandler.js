@@ -1,6 +1,6 @@
-const asyncHandler = (fn)=> async(req, reply, next)=>{
+const asyncHandler = (fn)=> async(req, reply)=>{
     try {
-        await fn(req, reply, next);
+        await fn(req, reply);
 
     } catch (error) {
         reply.status(error.code || 500).send({
