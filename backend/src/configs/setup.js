@@ -43,7 +43,7 @@ export const admin = new AdminJS({
     ],
 
     branding: {
-        companyName: "Nector App",
+        companyName: "Nectar App",
         withMadeWithLove:false,
     },
     defaultTheme: dark.id,
