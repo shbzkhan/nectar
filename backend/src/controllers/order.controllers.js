@@ -54,7 +54,7 @@ const confirmOrder = asyncHandler(async (req, reply) => {
     throw new apiError(404, "Order not found");
   }
   if (order.status !== "available") {
-    throw new apiError(404, "Order not found");
+    throw new apiError(404, "Order already pickup by another delivery person");
   }
   order.status = "confirmed"
 
@@ -95,7 +95,7 @@ const updateOrder = asyncHandler(async (req, reply) => {
     throw new apiError(404, "Order cannot be updated");
   }
 
-  if (order.deliveryLocation.toString() !== userId) {
+  if (order.deliveryPartner.toString() !== userId) {
     throw new apiError(401, "Unauthorized");
   }
 

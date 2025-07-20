@@ -17,10 +17,10 @@ const branchSchema = new Schema(
     },
     address: {
       type: String,
-        },
-        DeliveryPartners: [{
-            type: Schema.Types.ObjectId,
-            ref:'DeliveryPartner'
+    },
+    DeliveryPartners: [{
+        type: Schema.Types.ObjectId,
+        ref:'DeliveryPartner'
     }]
   },
   { timestamps: true }
