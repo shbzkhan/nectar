@@ -9,23 +9,23 @@ const productSchema = new Schema(
     image: {
       type: String,
       required: true,
-        },
-        price: {
-            type: String,
-            required: true
-        },
-        discountPrice: {
-            type:Number
-        },
-        qunatity: {
-            type: String,
-            required: true
-        },
-        category: {
-            type: Schema.Types.ObjectId,
-            ref: "Category",
-            required: true
-        }
+    },
+    price: {
+      type: String,
+      required: true,
+    },
+    discountPrice: {
+      type: Number,
+    },
+    quantity: {
+      type: String,
+      required: true,
+    },
+    category: {
+      type: Schema.Types.ObjectId,
+      ref: "Category",
+      required: true,
+    },
   },
   { timestamps: true }
 );
